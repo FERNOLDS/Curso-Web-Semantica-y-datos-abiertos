@@ -1,0 +1,15 @@
+
+PREFIX ex: <http://example.org/>
+PREFIX schema1: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+START = <TransportEventShape>
+
+<TransportEventShape> {
+  a [ex:TransportEvent] ;
+  schema1:datePublished xsd:gYear ;
+  schema1:departureLocation xsd:string ;
+  schema1:arrivalLocation xsd:string ;
+  ex:milesTonKm xsd:float ;
+  ex:weight xsd:float
+}
